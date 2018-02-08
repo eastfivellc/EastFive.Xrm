@@ -58,14 +58,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\EntityAttributeAttribute.cs" />
     <Compile Include="Attributes\EntityAttribute.cs" />
+    <Compile Include="Attributes\ReferencedEntityAttribute.cs" />
     <Compile Include="Attributes\XrmEntryAttribute.cs" />
     <Compile Include="Attributes\EntityTypeAttribute.cs" />
+    <Compile Include="Entities\Opportunity.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\Quote.cs" />
+    <Compile Include="OrganizationSerivceExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Plugin.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="EntityReference.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EastFive.Core\EastFive.Core.csproj">
+      <Project>{73088f1b-3aca-476b-aa45-b7d6660f1c73}</Project>
+      <Name>EastFive.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
